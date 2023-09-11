@@ -2,6 +2,7 @@
 	// "build":{
     //     "dockerfile": "../Dockerfile"
     // },
+	// https://aka.ms/ghcs-default-image
 	"customizations": {
 		"vscode": {
 			"extensions": [
