@@ -1,4 +1,4 @@
-FROM apline:latest
+FROM alpine:latest
 
 # Install Forensics Tools
 COPY src/install-forensics.sh /tmp/install-forensics.sh
