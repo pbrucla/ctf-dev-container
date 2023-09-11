@@ -11,7 +11,8 @@ In order to use this project, you will need to have a [GitHub account](https://g
 1. Visit this repository on GitHub.
 2. Open the GitHub Codespace by typing `.`. This should open a GitHub Codespace in your browser.
 3. Once inside the codespace, open a terminal by typing `ctrl + \``.
-4. The terminal should prompt you to "Continue Working in GitHub Codespaces". Select this option and this will start up a new GitHub Codespace. You are now ready to start using the container!
+4. The terminal should prompt you to "Continue Working in GitHub Codespaces". Select this option.
+5. It will them prompt you for the instance type for your codespace. Select `2 cores, 8 GB RAM, 32 GB storage` and this will start up a new GitHub Codespace. You are now ready to start using the container!
 
 ## Tools
 Currently, the container comes with the following list of tools. If you would like to see a tool added, please open an issue or submit a pull request! You can also add your own tools by running.
