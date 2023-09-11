@@ -14,6 +14,8 @@ In order to use this project, you will need to have a [GitHub account](https://g
 4. The terminal should prompt you to "Continue Working in GitHub Codespaces". Select this option.
 5. It will them prompt you for the instance type for your codespace. Select `2 cores, 8 GB RAM, 32 GB storage` and this will start up a new GitHub Codespace. You are now ready to start using the container!
 
+To access a previously created codespace, type `ctrl + shift + p` and type `Codespaces: Connect to Codespace...`. This will show you a list of your codespaces and you can select the one you want to resume. Similarly, in order to shut down a codespace, type `ctrl + shift + p` and type `Codespaces: Stop Current Codespace`. This will stop the codespace and you will not be charged for it. To delete a Codespace, type `ctrl + shift + p` and type `Codespaces: Delete Codespace...`. This will delete the codespace and you will not be charged for it.
+
 ## Tools
 Currently, the container comes with the following list of tools. If you would like to see a tool added, please open an issue or submit a pull request! You can also add your own tools by running.
 
