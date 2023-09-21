@@ -1,8 +1,5 @@
 {
-	// "build":{
-    //     "dockerfile": "../Dockerfile"
-    // },
-	// https://aka.ms/ghcs-default-image
+	"image": "ghcr.io/pbrucla/ctf-dev-container:latest",
 	"customizations": {
 		"vscode": {
 			"extensions": [
