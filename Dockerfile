@@ -5,7 +5,7 @@ LABEL dev.containers.features="common"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update
 COPY src/* /tmp/
+RUN apt-get update && bash /tmp/install-general.sh && rm /tmp/install-general.sh
 RUN for script in /tmp/*.sh; do bash "$script"; done
 RUN rm -rf /tmp/*.sh
