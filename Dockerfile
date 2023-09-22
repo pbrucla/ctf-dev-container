@@ -6,6 +6,6 @@ LABEL dev.containers.features="common"
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
-COPY src/* /
-RUN for script in /*.sh; do bash $script; done
-RUN rm -rf /*.sh
+COPY src/* /tmp/
+RUN for script in /tmp/*.sh; do bash "$script"; done
+RUN rm -rf /tmp/*.sh
