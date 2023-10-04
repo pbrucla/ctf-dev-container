@@ -17,6 +17,7 @@ Simply click here to get started or view a previously created Codespace: [![Open
 - To open the Command Palette, click the gear icon in the bottom left corner and select "Command Palette". You can also use the keyboard shortcut listed here to open up the Command Palette directly.
 - To stop a Codespace, open the Command Palette, and search for `Codespaces: Stop Current Codespace`. Your Codespace will automatically stop after a period of inactivity as defined in your github user settings, but you should stop once you are done as you are only given a limited amount of usage per month.
 - To delete a Codespace, open the Command Palette, and search for `Codespaces: Delete Codespace...`. This will irreversably delete the Codespace!
+- To update your Codespace to the latest version, open the Command Palette, and search for `Codespaces: Full Rebuild Container`. Files in the `/workspaces` folder will be saved; all other changes to your container such as installing additional tools will be removed.
 - To view your Codespaces, visit [https://github.com/codespaces](https://github.com/codespaces)
 
 <!-- 
