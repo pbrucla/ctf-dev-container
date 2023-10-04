@@ -1,8 +1,5 @@
 {
-	// "image": "ghcr.io/pbrucla/ctf-dev-container:latest",
-	"build":{
-		"dockerfile": "../Dockerfile"
-	},
+	"image": "ghcr.io/pbrucla/ctf-dev-container:latest",
 	"customizations": {
 		"vscode": {
 			"extensions": [
