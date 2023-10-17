@@ -3,4 +3,4 @@
 # Install Crypto Tools
 
 # install sage
-apt install -y sagemath
+apt-get install -y sagemath

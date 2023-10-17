@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Install General Tools
-apt install -y python3-pip ruby php
+apt-get install -y python3-pip ruby php
 
 # Install Rust
 export CARGO_INSTALL_ROOT='/usr/local'
