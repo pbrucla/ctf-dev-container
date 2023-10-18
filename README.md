@@ -1,4 +1,4 @@
-# [WIP] ctf-dev-container
+# ctf-dev-container
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/pbrucla/ctf-dev-container?quickstart=1)
 
 All the CTF tooling you will need inside a [GitHub Dev Container](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)!
