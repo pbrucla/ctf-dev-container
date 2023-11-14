@@ -7,6 +7,11 @@ cargo install pwninit
 cargo install xgadget --features cli-bin
 gem install one_gadget
 
+# Install ghidra
+sudo apt install -y openjdk-17-jdk
+wget 'https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.4_build/ghidra_10.4_PUBLIC_20230928.zip'
+unzip 'ghidra_10.4_PUBLIC_20230928.zip'
+
 curl -fsSLo /usr/local/lib/gef.py 'https://github.com/hugsy/gef/raw/main/gef.py'
 echo 'source /usr/local/lib/gef.py' >/etc/gdbinit
 
