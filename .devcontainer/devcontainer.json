@@ -1,5 +1,5 @@
 {
-	"image": "ghcr.io/pbrucla/ctf-dev-container:latest",
+	"image": "ghcr.io/pbrucla/ctf-dev-container/refs/heads/virtual-desktop:latest",
 	"customizations": {
 		"vscode": {
 			"extensions": [
