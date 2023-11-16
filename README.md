@@ -1,5 +1,5 @@
 # Virtual Desktop Notes
-- Access the virtual desktop by clicking the "ports" tab in VSCode, then clicking the globe icon that appears when hovering over the "Remote Desktop" port
+- Access the virtual desktop by clicking the "ports" tab in VSCode, then clicking the globe icon that appears when hovering over the "Remote Desktop" port, and login using the password `vscode`
 - ghidra is not installed by default - in your VSCode terminal, simply run `./installGhidra.sh` to install, then run ghidra by opening a terminal on the remote desktop and running `ghidra`
 
 # ctf-dev-container
