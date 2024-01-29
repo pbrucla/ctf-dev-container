@@ -7,8 +7,7 @@ cargo install pwninit
 cargo install xgadget --features cli-bin
 gem install one_gadget
 
-curl -fsSLo /usr/local/lib/gef.py 'https://github.com/hugsy/gef/raw/main/gef.py'
-echo 'source /usr/local/lib/gef.py' >/etc/gdbinit
+bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 
 echo 'Configuring pwntools'
 cat <<-'EOF' >/etc/pwn.conf
