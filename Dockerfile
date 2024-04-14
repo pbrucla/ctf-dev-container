@@ -7,5 +7,5 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 COPY src/* /tmp/
 RUN apt-get update && bash /tmp/install-general.sh && rm /tmp/install-general.sh
-RUN for script in /tmp/*.sh; do bash "$script"; done
+RUN for script in /tmp/*.sh; do source "$script"; done
 RUN rm -rf /tmp/*.sh
