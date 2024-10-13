@@ -11,5 +11,13 @@
 		"settings": {
 			"workbench.colorTheme": "Dark (Visual Studio)"
 		}
-	}
+	},
+	"features": {
+		"docker-in-docker": {
+			"version": "latest",
+			"moby": true,
+			"dockerDashComposeVersion": "v2"
+		}
+	},
+	"runArgs": ["--init"]
 }
