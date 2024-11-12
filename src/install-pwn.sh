@@ -9,7 +9,7 @@ gem install one_gadget
 
 bash -c "$(curl -fsSL https://gef.blah.cat/sh)" -s -y
 cp /root/.gdbinit /home/vscode/.gdbinit && chown vscode:vscode /home/vscode/.gdbinit
-cp /root/.gef-2024.01.py /home/vscode/.gef-2024.01.py && chown vscode:vscode /home/vscode/.gef-2024.01.py
+cp /root/.gef-*.py /home/vscode/ && chown vscode:vscode /home/vscode/.gef-*.py
 
 echo 'Configuring pwntools'
 cat <<-'EOF' >/etc/pwn.conf
