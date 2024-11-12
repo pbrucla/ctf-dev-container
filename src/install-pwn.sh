@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-apt-get install -y python3-pip ruby netcat-openbsd libssl-dev liblzma-dev pkg-config patchelf elfutils gdbserver tmux
+apt-get install -y python3-pip ruby netcat-openbsd file libssl-dev liblzma-dev pkg-config patchelf elfutils gdb gdbserver tmux
 
 pip3 install --upgrade pip
 pip3 install --upgrade pwntools patchelf ROPgadget
@@ -28,6 +28,8 @@ cat <<-'EOF' >/usr/local/share/pwninit-template.py
 	#!/usr/bin/env python3
 
 	from pwn import *
+
+	context.terminal = ["tmux", "splitw", "-h"]
 
 	{bindings}
 
