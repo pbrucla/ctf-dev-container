@@ -6,10 +6,10 @@
 				"mads-hartmann.bash-ide-vscode",
 				"dbaeumer.vscode-eslint",
 				"editorconfig.editorconfig"
-			]
-		},
-		"settings": {
-			"workbench.colorTheme": "Dark (Visual Studio)"
+			],
+			"settings": {
+				"workbench.colorTheme": "GitHub Dark"
+			}
 		}
 	},
 	"features": {
