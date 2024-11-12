@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-apt-get install -y python3-pip netcat-openbsd libssl-dev liblzma-dev pkg-config patchelf elfutils gdbserver tmux
+apt-get install -y python3-pip ruby netcat-openbsd libssl-dev liblzma-dev pkg-config patchelf elfutils gdbserver tmux
 
 pip3 install --upgrade pip
 pip3 install --upgrade pwntools patchelf ROPgadget
@@ -44,5 +44,5 @@ cat <<-'EOF' >/usr/local/share/pwninit-template.py
 
 	r.interactive()
 EOF
-echo "alias pwninit='pwninit --template-path /usr/local/share/pwninit-template.py'" > /etc/profile.d/pwninit-template.sh
-echo "source /etc/profile.d/pwninit-template.sh" >> /home/vscode/.profile
+
+echo "alias pwninit='pwninit --template-path /usr/local/share/pwninit-template.py'" >> /home/vscode/.profile
