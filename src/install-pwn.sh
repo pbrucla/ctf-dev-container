@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 
-apt-get install -y netcat-openbsd libssl-dev liblzma-dev pkg-config patchelf elfutils gdbserver tmux
+apt-get install -y python3-pip netcat-openbsd libssl-dev liblzma-dev pkg-config patchelf elfutils gdbserver tmux
+
+pip3 install --upgrade pip
+pip3 install --upgrade pwntools patchelf ROPgadget
 
 # Install Pwn Tools
-cargo install pwninit
-cargo install xgadget --features cli-bin
+curl https://sh.rustup.rs -sSf | bash -s -- -y
+source "$HOME/.cargo/env"
+# Hack: Install pwninit and xgadget in /usr/local to allow these to be accessed
+cargo install pwninit --root="/usr/local"
+cargo install xgadget --features="cli-bin" --root="/usr/local"
 gem install one_gadget
 
 bash -c "$(curl -fsSL https://gef.blah.cat/sh)" -s -y
@@ -38,4 +44,5 @@ cat <<-'EOF' >/usr/local/share/pwninit-template.py
 
 	r.interactive()
 EOF
-echo "alias pwninit='pwninit --template-path /usr/local/share/pwninit-template.py'" >/etc/profile.d/pwninit-template.sh
+echo "alias pwninit='pwninit --template-path /usr/local/share/pwninit-template.py'" > /etc/profile.d/pwninit-template.sh
+echo "source /etc/profile.d/pwninit-template.sh" >> /home/vscode/.profile
