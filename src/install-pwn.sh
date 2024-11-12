@@ -45,4 +45,4 @@ cat <<-'EOF' >/usr/local/share/pwninit-template.py
 	r.interactive()
 EOF
 
-echo "alias pwninit='pwninit --template-path /usr/local/share/pwninit-template.py'" >> /home/vscode/.profile
+echo -e "\n# pwninit\nalias pwninit='pwninit --template-path /usr/local/share/pwninit-template.py'" >> /home/vscode/.bashrc
