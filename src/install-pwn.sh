@@ -48,3 +48,7 @@ cat <<-'EOF' >/usr/local/share/pwninit-template.py
 EOF
 
 echo -e "\n# pwninit\nalias pwninit='pwninit --template-path /usr/local/share/pwninit-template.py'" >> /home/vscode/.bashrc
+
+# Configure to run x86 binaries (32-bit)
+apt-get update
+apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
